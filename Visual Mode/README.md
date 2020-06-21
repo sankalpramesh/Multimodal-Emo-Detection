@@ -1,0 +1,3 @@
+- `python emotions.py train` to get the `model.h5` file and the metric files. `python emotions.py display` to get test dataset result on the trained model `model.h5`.
+- In order to facilitate multimodal emotion detection, we need to get the activations at the final layer of the CNN. Run `python get_activation_emb.py` to get the activations stored in pickle files.
+- `python reduce_activations_dim.py` to reduce the dimension of the activations to a 200-dimension vector using PCA which can finally be used to get the activations to be used in multimodal emotion detection.
